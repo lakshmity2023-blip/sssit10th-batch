@@ -1,0 +1,22 @@
+using Microsoft.AspNetCore.Mvc;
+using CustomerApp.Models;
+
+namespace CustomerApp.Controllers
+{
+    public class CustomerController : Controller
+    {
+        // Display Form
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // Receive Form Data
+        [HttpPost]
+        public IActionResult Create(Customer customer)
+        {
+            return View("Display", customer);
+        }
+    }
+}
