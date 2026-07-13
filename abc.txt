@@ -1,0 +1,6 @@
+git Architecture:
+
+1.working tree
+2.staging Area
+3.Local Repository
+4.CentralRepository
